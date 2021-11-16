@@ -6,14 +6,21 @@
 
 
 
-function double(num) {
+/*function double(num) {
   x = 5;
   return x;
 }
 
 double(6);
 console.log('The value of x is', x, '-- it should be 5.');
+*/
+let double = function double(num) {
+  var x = 5;
+  return x;
+}
 
+double(6);
+console.log('The value of x is', double.x, '-- it should be 5.');
 /*
   Step 2. Rewrite the JavaScript `double()` function above so that
   it does not pollute the global namespace: that is, neither its
