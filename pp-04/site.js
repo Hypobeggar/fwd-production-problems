@@ -31,6 +31,7 @@ console.log('The value of x is', x, '-- it should be 5.');
 // STEP 3
 function myfunction(data) {
   return double(data);
+}
   function double(num) {
     if (typeof(num) !== 'number') {
       console.log("num must be a number")
@@ -40,7 +41,7 @@ function myfunction(data) {
     x = num * 2;
     return x;
   }
-}
+
 
 
 console.log('The value of x is', myfunction(5), '-- it should be 5.');
